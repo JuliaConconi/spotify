@@ -2,25 +2,176 @@
     margin: 0;
     padding: 0;
     color: white;
-    font-family: 'Gotham', sans-serif
-
+    font-family: 'Gotham', sans-serif;
 }
 
-main{
-    background-color: black;
-
-}
 body{
-
-    background-color: rgb(26, 25, 25);
-}
-
-h1{
-
-    justify-content: center;
+    background-image: linear-gradient(rgb(41, 41, 41), black);
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-img{
-    height: 50px;
+main{
+    background-color: #121212;
+    padding: 40px;
+    margin: 40px;
+    width: 700px;
+    border-radius: 6px;
+}
+
+#div-container, .div-subsecoes, #div-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-subsecoes {
+    width: 45%;
+}
+
+.divisao {
+    margin: 25px;
+    height: 1px;
+    background-color: rgba(191, 191, 191, 0.242);
+    width: 70%;
+}
+
+h1 {
+    margin: 30px 0;
+}
+
+#spotify-logo {
+    height: 36px;
+}
+
+#div-botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    width: 100%;
+    margin: 4px;
+    background-color: black;
+    border: 1px #797979 solid;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.img-button {
+    height: 24px;
+}
+
+button p {
+    width: 100%;
+    text-align: center;
+}
+
+#div-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-weight: bolder;
+    margin: 12px 0;
+}
+
+input {
+    width: 100%;
+    padding: 16px 12px;
+    margin-bottom: 8px;
+    background-color: black;
+    border: 1px #797979 solid;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type=email], input[type=password] {
+    transform: translate(-4%, 0);
+}
+
+#div-check {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+#div-check * {
+    margin: 0;
+}
+
+#label-lembrar {
+    font-size: 12px;
+    margin-left: 16px;
+    font-weight: normal;
+}
+
+#check-lembrar {
+    position: absolute;
+    width: 35px;
+    height: 16px;
+    opacity: 0;
+}
+
+#check-visual {
+    transition: 0.3s;
+    border-radius: 12px;
+    width: 35px;
+    height: 16px;
+    background-color: grey;
+}
+
+#bolinha {
+    transition: 0.3s;
+    height: 12px;
+    width: 12px;
+    background-color: black;
+    border-radius: 100%;
+    transform: translate(5px, 2px)
+}
+
+#check-lembrar:checked ~ #check-visual {
+    background-color: #1ed760;
+}
+
+#check-lembrar:checked ~ #check-visual #bolinha {
+    transform: translate(18px, 2px); 
+    
+}
+
+#button-entrar {
+    background-color: #1ed760;
+    margin: 30px 0;
+}
+
+#button-entrar p {
+    color: black;
+    margin: 4px 0;
+}
+
+#p-esqueceu {
+    margin-top: 24px;
+}
+
+#p-semconta {
+    margin: 40px 0;
+}
+
+footer {
+    padding: 24px 0;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    text-align: center;
+}
+
+footer a, footer p {
+    color: rgb(166, 166, 166);
 }
