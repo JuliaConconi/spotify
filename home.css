@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    color: white;
     padding: 0;
     font-family: 'Gotham' , sans-serif
 }
@@ -11,19 +12,9 @@ body {
     color: #fff;
 }
 
-header {
-    background-color: #1DB954;
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
 main {
-    padding: 20px;
+    padding: 4px;
+    height: calc(100vh - 8px);
 }
 
 .artist h1 {
@@ -48,7 +39,7 @@ main {
 
     padding: 10px;
     border-radius: 5px;
-    width: 150px;
+    width: 160px;
     text-align: center;
 }
 
@@ -69,20 +60,21 @@ main {
 .artist p, .album p {
     margin: 10px 0 0 0;
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .album {
    
     padding: 15px;
     border-radius: 8px;
-    width: 170px;
+    width: 180px;
     text-align: center;
 }
 
-.albums h1{
+.albums h1, .artists h1{
 
     margin: 20px;
+    font-size: 32px;
 }
 
 h3{
@@ -93,5 +85,184 @@ h3{
 }
 
 p{
-    font-size: 15px;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+
+a {
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    display: flex;
+}
+
+header {
+    height: 100vh;
+    width: 360px;
+    position: fixed;
+    left: 0;
+}
+
+main {
+    margin-left: 360px;
+    width: calc(100vw - 360px);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interior {
+    width: calc(100% - 8px);
+    height: calc(100% - 16px);
+}
+
+#section-nav, #section-biblioteca, #section-lingua {
+    background-color: #181818;
+    border-radius: 8px;
+
+}
+
+#section-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    margin-bottom: 8px;
+}
+
+#img-logo {
+    width: 78px;
+    opacity: 1;
+}
+
+.img-icone {
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    margin: 4px 16px;
+    transition: 0.3s;
+    opacity: 0.6;
+}
+
+a:hover .img-icone, a:hover {
+    color: white;
+    opacity: 1;
+}
+
+#section-biblioteca {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#biblioteca-topo button {
+    background-color: rgb(0, 0, 0, 0);
+    border: 0;
+}
+
+#biblioteca-topo {
+    display: flex;
+    justify-content: space-between;
+}
+
+#biblioteca-topo button {
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    color: #b3b3b3;
+    font-size: 16px;
+}
+
+#biblioteca-topo .img-icone {
+    opacity: 0.6;
+}
+
+#biblioteca-topo button:hover, #biblioteca-topo button:hover .img-icone {
+    opacity: 1;
+    color: white;
+}
+
+#biblioteca-sub-blocos {
+    height: 265px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#biblioteca-sub-blocos::-webkit-scrollbar {
+    display: none;
+    background: rgb(0, 0, 0, 0);
+}
+
+.sub-bloco {
+    background-color: rgb(36, 36, 36);
+    border-radius: 8px;
+    padding: 20px 16px;
+    margin: 16px 0;
+}
+
+.sub-bloco h4, .sub-bloco p {
+    margin-bottom: 6px;
+}
+
+.sub-bloco p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.sub-bloco button {
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+#section-lingua {
+    padding: 36px 24px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#section-lingua div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#section-lingua a {
+    font-size: 11px;
+    color: #a7a7a7;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+}
+
+#section-lingua img {
+    width: 16px;
+    margin-right: 8px;
+}
+
+#section-lingua button {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 16px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 0, 0, 0);
+    border: 1px solid #878787;
+    border-radius: 50px;
+    margin-top: 26px;
 }
