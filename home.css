@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Gotham' , sans-serif;
+}
+
+aside{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+
+    height: 50px;
+}
+header a{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+header ul a{
+    background-color: white;
+    color: black;
+    
+
+}
+
+nav {
+    width: 600px;
+}
