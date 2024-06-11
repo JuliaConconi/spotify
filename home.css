@@ -77,8 +77,55 @@ main {
     font-size: 32px;
 }
 
-h3{
+#fundo-degrade {
+    background-image: linear-gradient(rgb(43, 43, 43), black);
+    padding-top: 20px;
+}
 
+#topo {
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    font-weight: bold;
+}
+
+#topo div {
+    display: flex;
+}
+
+#topo .direita {
+    gap: 24px;
+}
+
+#topo .esquerda {
+    gap: 8px;
+    align-items: center;
+}
+
+#topo .esquerda button {
+    background-color: black;
+    border-radius: 100%;
+    padding: 8px;
+    outline: none;
+    border: 0;
+}
+
+#topo .esquerda img {
+    height: 16px;
+}
+
+#topo .direita a {
+    padding: 16px 24px;
+    border-radius: 50px;
+}
+
+#link2 {
+    background-color: white;
+    color: black;
+}
+
+h3{
     font-size: 15px;
     text-align: left;
     color: gray;
