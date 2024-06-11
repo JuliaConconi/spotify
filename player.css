@@ -179,3 +179,8 @@ a:hover .img-icone, a:hover {
     border-radius: 50px;
     margin-top: 26px;
 }
+
+
+#section-main {
+    height: 100%;
+}
